@@ -27,14 +27,14 @@
 }
 
 .login-form input {
-  flex-basis: 100%;
+  flex-basis: 50%;
   min-height: 2rem;
 }
 
 .login-form label {
-  flex-basis: 100%;
-  padding-top: 1rem;
-  padding-bottom: 0.2rem;
+  flex-basis: 20%;
+  /* padding-top: 1rem;
+  padding-bottom: 0.2rem; */
 }
 
 .login-form a {

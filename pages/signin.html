@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>College Management System</title>
+    <title>Sign In</title>
 
     <!-- CCS -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -13,18 +13,30 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./styles/all.css" />
-    <link rel="stylesheet" href="./styles/login.css" />
+    <link rel="stylesheet" href="../styles/all.css" />
+    <link rel="stylesheet" href="../styles/login.css" />
   </head>
   <body>
     <div class="login-box">
       <form action="./php/login.php" class="login-form" method="POST">
         <div class="nav-buttons">
-          <button type="button" class="btn">Sign In</button>
-          <button type="button" class="btn">Sign Up</button>
+          <button
+            type="button"
+            class="btn"
+            onclick="location.href='./signin.html'"
+          >
+            Sign In
+          </button>
+          <button
+            type="button"
+            class="btn"
+            onclick="location.href='./signup.html'"
+          >
+            Sign Up
+          </button>
         </div>
 
-        <label for="fname">Full Name</label>
+        <label for="fname">Username</label>
         <input type="text" id="fname" name="fname" />
         <label for="passwd">Password</label>
         <input type="password" name="passwd" id="passwd" />
