@@ -33,5 +33,4 @@
     echo "Couldn't insert into the table!";
   }
   include "../pages/signin.html";
-  // include "../pages/landing.html";
 ?>
