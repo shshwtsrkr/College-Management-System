@@ -29,5 +29,5 @@
   if(! $result){
     echo "Couldn't insert into the table!";
   }
-  include "../landing.html";
+  include "../signin.html";
 ?>
