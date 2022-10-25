@@ -12,10 +12,15 @@
   min-width: 50%;
   min-height: 20rem;
 
+  flex-basis: 50%;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+}
+
+.image-box{
+  flex-basis: 50%;
 }
 
 .nav-buttons {
@@ -32,7 +37,7 @@
 }
 
 .login-form label {
-  flex-basis: 20%;
+  flex-basis: 50%;
   /* padding-top: 1rem;
   padding-bottom: 0.2rem; */
 }
