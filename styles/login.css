@@ -19,7 +19,7 @@
   justify-content: center;
 }
 
-.image-box{
+.image-box {
   flex-basis: 50%;
 }
 
@@ -38,8 +38,8 @@
 
 .login-form label {
   flex-basis: 50%;
-  /* padding-top: 1rem;
-  padding-bottom: 0.2rem; */
+  padding-top: 1rem;
+  padding-bottom: 0.2rem;
 }
 
 .login-form a {
