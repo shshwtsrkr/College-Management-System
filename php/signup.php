@@ -9,7 +9,6 @@
   // }
   // echo "Created table!!";
 
-
   //this is to add data to table
 
   $usrnm = $_POST["fname"];
@@ -30,7 +29,8 @@
   $result2 = mysqli_query($conn, $sql2);
 
   if(! $result2){
-    echo "Couldn't insert into the table!";
+    echo "Couldn't insert into the table because such a reg no already exists!";
+    include "../pages/signup.html";    
   }
   include "../pages/signin.html";
 ?>
