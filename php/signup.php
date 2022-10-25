@@ -2,16 +2,21 @@
   include "connection.php";
 
   //this is to create new table
-  // $sql="CREATE TABLE studentTemp(username varchar(40),  passwd varchar(40));";
-  // $result=mysqli_query($conn, $sql);
+  $sql="CREATE TABLE IF NOT EXISTS student(username varchar(40),  passwd varchar(40));";
+  $result=mysqli_query($conn, $sql);
 
-  // if(! $result){
-  //   echo "Failed to create table";
-  // }
-  // echo "Created table!!";
+  if(! $result){
+    echo "Failed to create table";
+  }
+  echo "Created table!!";
 
+
+  //this is to add data to table
   $usrnm = $_POST["fname"];
   $pswd = $_POST["passwd"];
+  $regno = $_POST["regno"];
+  $emailId = $_POST["emailId"];
+  
 
   $username = stripcslashes($usrnm);
   $password = stripcslashes($pswd);
@@ -24,6 +29,5 @@
   if(! $result){
     echo "Couldn't insert into the table!";
   }
-  // echo "Inserted into the table<br>";
   include "../landing.html";
 ?>
