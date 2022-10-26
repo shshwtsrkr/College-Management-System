@@ -11,7 +11,11 @@
   </head>
   <body>
     <div class="login-box">
-      <form action="../php/register.php" method="POST" class="login-form">
+      <form
+        action="../php/semesterRegistration.php"
+        method="POST"
+        class="login-form"
+      >
         <label for="phoneNo">Phone No</label>
         <input
           type="number"
@@ -36,15 +40,9 @@
         <div class="choosable">
           <label for="gender">Gender</label>
           <div class="radio-buttons">
-            <input type="radio" id="male" name="gender" value="Male" required />
+            <input type="radio" id="male" name="gender" value="M" required />
             <label for="male">Male</label>
-            <input
-              type="radio"
-              id="female"
-              name="gender"
-              value="Female"
-              required
-            />
+            <input type="radio" id="female" name="gender" value="F" required />
             <label for="female">Female</label><br />
           </div>
         </div>
@@ -52,10 +50,7 @@
         <div class="choosable">
           <label for="feePaid">Fee paid</label>
           <div class="radio-buttons">
-            <input type="radio" id="yes" name="feePaid" value="Yes" required />
-            <label for="male">Yes</label>
-            <input type="radio" id="no" name="feePaid" value="No" required />
-            <label for="female">No</label><br />
+            <input type="checkbox" id="yes" name="feePaid" value="1" required />
           </div>
         </div>
         <button class="btn" type="submit">Submit</button>
