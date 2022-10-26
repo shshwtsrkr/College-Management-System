@@ -1,12 +1,16 @@
-.login-box {
+/* .login-box {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
   min-height: 100vh;
+} */
+
+.spcing {
+  padding: 1.0%;
 }
 
-.login-form {
+/* .login-form {
   border: 2px solid;
   padding: 20px;
   min-width: 50%;
@@ -45,11 +49,11 @@
 .login-form a {
   flex-basis: 100%;
   text-align: center;
-}
+} */
 
-.btn {
+/* .btn {
   min-width: 30%;
   min-height: 2rem;
   margin: 20px;
   padding-top: 0.5 rem;
-}
+} */

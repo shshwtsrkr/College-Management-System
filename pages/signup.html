@@ -6,7 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sign Up</title>
 
-    <!-- CCS -->
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+    <!-- CSS -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -16,37 +19,52 @@
     <link rel="stylesheet" href="../styles/all.css" />
     <link rel="stylesheet" href="../styles/login.css" />
   </head>
+
   <body>
-    <div class="login-box">
-      <form action="../php/signup.php" class="login-form" method="POST">
-        <div class="nav-buttons">
-          <button
-            type="button"
-            class="btn"
-            onclick="location.href='./signin.html'"
-          >
-            Sign In
-          </button>
-          <button
-            type="button"
-            class="btn"
-            onclick="location.href='./signup.html'"
-          >
-            Sign Up
-          </button>
+
+    <ul class="spcing nav nav-pills nav-fill">
+      <li class="nav-item">
+        <a class="nav-link " href="../pages/signin.html">Sign in</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active" href="../pages/signup.html">Sign up</a>
+    </ul>
+  
+    <div class="spcing">
+      <form action="../php/signin.php" method="POST">
+  
+        <div class="row mb-3">
+          <label for="fname" class="col-sm-2 col-form-label">Username</label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" id="fname" required />
+          </div>
+        </div>
+  
+        <div class="row mb-3">
+          <label for="passwd" class="col-sm-2 col-form-label">Password</label>
+          <div class="col-sm-10">
+            <input type="password" class="form-control" id="passwd" required />
+          </div>
         </div>
 
-        <label for="fname">Username</label>
-        <input type="text" id="fname" name="fname" required />
-        <label for="passwd">Password</label>
-        <input type="password" name="passwd" id="passwd" required />
-        <label for="regno">Registration Number</label>
-        <input type="number" id="regno" name="regno" required />
-        <label for="emailId">Email</label>
-        <input type="email" id="emailId" name="emailId" required />
+        <div class="row mb-3">
+          <label for="regno" class="col-sm-2 col-form-label">Registration number</label>
+          <div class="col-sm-10">
+            <input type="number" class="form-control" id="regno" required />
+          </div>
+        </div>
 
-        <button type="submit" class="btn">Submit</button> <br />
+        <div class="row mb-3">
+          <label for="emailId" class="col-sm-2 col-form-label">Email ID</label>
+          <div class="col-sm-10">
+            <input type="email" class="form-control" id="emailId" required />
+          </div>
+        </div>
+
+        <div class="text-center">
+          <button type="submit" class="row mb-3 justify-content-center align-items-center btn btn-primary">Submit</button>
+        </div>
       </form>
     </div>
-  </body>
+    </body>
 </html>
