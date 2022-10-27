@@ -7,7 +7,12 @@
     <title>Sign In</title>
 
     <!-- CSS only -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
 
     <!--fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -20,38 +25,43 @@
     <link rel="stylesheet" href="../styles/login.css" />
   </head>
 
-
   <body>
+    <ul class="spcing nav nav-pills nav-fill">
+      <li class="nav-item">
+        <a class="nav-link active" href="../pages/signin.html">Sign in</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="../pages/signup.html">Sign up</a>
+      </li>
+    </ul>
 
-  <ul class="spcing nav nav-pills nav-fill">
-    <li class="nav-item">
-      <a class="nav-link active" href="../pages/signin.html">Sign in</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="../pages/signup.html">Sign up</a>
-  </ul>
-
-  <div class="spcing">
-    <form action="../php/signin.php" method="POST">
-
-      <div class="row mb-3">
-        <label for="regno" class="col-sm-2 col-form-label">Registration number</label>
-        <div class="col-sm-10">
-          <input type="number" class="form-control" id="regno">
+    <div class="spcing">
+      <form action="../php/signin.php" method="POST">
+        <div class="row mb-3">
+          <label for="regno" class="col-sm-2 col-form-label"
+            >Registration number</label
+          >
+          <div class="col-sm-10">
+            <input type="number" class="form-control" id="regno" />
+          </div>
         </div>
-      </div>
 
-      <div class="row mb-3">
-        <label for="passwd" class="col-sm-2 col-form-label">Password</label>
-        <div class="col-sm-10">
-          <input type="password" class="form-control" id="passwd">
+        <div class="row mb-3">
+          <label for="passwd" class="col-sm-2 col-form-label">Password</label>
+          <div class="col-sm-10">
+            <input type="password" class="form-control" id="passwd" />
+          </div>
         </div>
-      </div>
 
-      <div class="text-center">
-        <button type="submit" class="row mb-3 justify-content-center align-items-center btn btn-primary">Submit</button>
-      </div>
-    </form>
-  </div>
+        <div class="text-center">
+          <button
+            type="submit"
+            class="row mb-3 justify-content-center align-items-center btn btn-primary"
+          >
+            Submit
+          </button>
+        </div>
+      </form>
+    </div>
   </body>
 </html>
