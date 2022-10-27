@@ -1,83 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sign In</title>
 
-    <!-- CSS -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
-      crossorigin="anonymous"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sign In</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="../styles/all.css" />
-    <link rel="stylesheet" href="../styles/style.css" />
-  </head>
+  <!-- CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
 
-  <body class="light-coloring">
-    <div class="container vh-100">
-      <div class="row h-100">
-        <div class="card my-auto shadow p-0">
-          <ul class="nav nav-pills nav-fill pb-4">
-            <li class="nav-item">
-              <a class="nav-link active coloring" href="../pages/signin.html">Sign in</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link coloring2" href="../pages/signup.html">Sign up</a>
-            </li>
-          </ul>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="../styles/all.css" />
+  <link rel="stylesheet" href="../styles/style.css" />
+</head>
 
-          <div class="m-4 mb-1">
-            <form action="../php/signin.php" method="POST">
-              <div class="row mb-3">
-                <label for="regno" class="col-sm-2 col-form-label"
-                  >Reg No</label
-                >
-                <div class="col-sm-10">
-                  <input
-                    type="number"
-                    class="form-control"
-                    id="regno"
-                    name="regno"
-                    required
-                  />
-                </div>
+<body class="light-coloring">
+  <div class="container vh-100">
+    <div class="row h-100">
+      <div class="card my-auto shadow p-0">
+        <ul class="nav nav-pills nav-fill pb-4">
+          <li class="nav-item">
+            <a class="nav-link active coloring" href="../pages/signin.html">Sign in</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link coloring2" href="../pages/signup.html">Sign up</a>
+          </li>
+        </ul>
+
+        <div class="m-4 mb-1">
+          <form action="../php/signin.php" method="POST">
+            <div class="row mb-3">
+              <label for="regno" class="col-sm-2 col-form-label">Reg No</label>
+              <div class="col-sm-10">
+                <input type="number" class="form-control" id="regno" name="regno" required />
               </div>
+            </div>
 
-              <div class="row mb-3">
-                <label for="passwd" class="col-sm-2 col-form-label"
-                  >Password</label
-                >
-                <div class="col-sm-10">
-                  <input
-                    type="password"
-                    class="form-control"
-                    id="passwd"
-                    name="passwd"
-                    required
-                  />
-                </div>
+            <div class="row mb-3">
+              <label for="passwd" class="col-sm-2 col-form-label">Password</label>
+              <div class="col-sm-10">
+                <input type="password" class="form-control" id="passwd" name="passwd" required />
               </div>
+            </div>
 
-              <div class="justify-content-center row mt-5 mb-4">
-                <button type="submit" class="btn btn-primary primary-bg w-25">
-                  Submit
-                </button>
-              </div>
-            </form>
-          </div>
+            <div class="justify-content-center row mt-5 mb-4">
+              <button type="submit" class="btn btn-primary primary-bg w-25">
+                Submit
+              </button>
+            </div>
+          </form>
         </div>
       </div>
     </div>
-  </body>
+  </div>
+</body>
+
 </html>
