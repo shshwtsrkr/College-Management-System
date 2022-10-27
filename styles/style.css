@@ -5,6 +5,21 @@
     --second-bg-color: #c1efde;
   }
   
+
+  .coloring {
+    background-color: var(--main-bg-color)!important;
+    color: white!important;
+  }
+
+  .coloring2 {
+    background-color: white!important;
+    color: var(--main-bg-color)!important;
+  }
+
+  .light-coloring {
+    background-color: var(--second-bg-color);
+  }
+
   .primary-text {
     color: var(--main-text-color);
   }
@@ -15,6 +30,10 @@
   
   .primary-bg {
     background-color: var(--main-bg-color);
+  }
+
+  .primary-bg:hover {
+    background-color: #00764b;
   }
   
   .secondary-bg {
