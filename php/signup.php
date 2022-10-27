@@ -31,6 +31,7 @@
   if(! $result2){
     echo "Couldn't insert into the table because such a reg no already exists!";
     include "../pages/signup.html";    
+  }else{
+    include "../pages/signin.html";
   }
-  include "../pages/signin.html";
 ?>
