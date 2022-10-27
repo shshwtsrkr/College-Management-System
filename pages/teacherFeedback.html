@@ -21,6 +21,7 @@
       rel="stylesheet"
     />
 
+    <link rel="stylesheet" href="../styles/all.css" />
     <link rel="stylesheet" href="../styles/style.css" />
     <title>Teacher Feedback</title>
   </head>
@@ -63,12 +64,6 @@
             href="../pages/teacherFeedback.html"
             class="list-group-item list-group-item-action bg-transparent second-text fw-bold active"
             ><i class="fas fa-solid fa-comment me-2"></i>Teacher Feedback</a
-          >
-
-          <a
-            href="../pages/messFeedback.html"
-            class="list-group-item list-group-item-action bg-transparent second-text fw-bold"
-            ><i class="fas fa-solid fa-burger me-2"></i>Mess Feedback</a
           >
 
           <a
@@ -129,180 +124,172 @@
           </div>
         </nav>
 
-        <div class="container px-4">
-          <div class="container row mb-3">
-            <div class="container col-sm-10">
-              
-              <form action="../php/teacherFeedback.php" method="POST">
-                <div class="row mb-3">
-                  <label for="tname" class="col-sm-3 col-form-label"
-                    >Teacher's name</label
-                  >
-                  <div class="col-sm-9">
-                    <input
-                      type="text"
-                      class="form-control"
-                      id="tname"
-                      name="tname"
-                      required
-                    />
-                  </div>
-                </div>
-                <br />
-
-                <label for="qteaching" class="col-sm-3 col-form-label"
-                  >Excellent at teaching</label
+        <div class="container p-4 w-75 vh-100">
+          <div class="row h-75 align-items-center justify-content-center">
+            <form
+              class="my-auto"
+              action="../php/teacherFeedback.php"
+              method="POST"
+            >
+              <div class="row mb-3">
+                <label for="tname" class="col-sm-3 col-form-label"
+                  >Teacher's name</label
                 >
-
-                <div class="form-check form-check-inline col-sm-3">
+                <div class="col-sm-9">
                   <input
-                    class="form-check-input"
-                    type="radio"
-                    name="qteaching"
-                    id="qteaching"
-                    value="option1"
+                    type="text"
+                    class="form-control"
+                    id="tname"
+                    name="tname"
+                    required
                   />
-                  <label class="form-check-label" for="qteaching">Agree</label>
                 </div>
+              </div>
+              <br />
 
-                <div class="form-check form-check-inline col-sm-3">
-                  <input
-                    class="form-check-input"
-                    type="radio"
-                    name="qteaching"
-                    id="qteaching"
-                    value="option2"
-                  />
-                  <label class="form-check-label" for="qteaching"
-                    >Neutral</label
-                  >
-                </div>
+              <label for="qteaching" class="col-sm-3 col-form-label"
+                >Excellent at teaching</label
+              >
 
-                <div class="form-check form-check-inline">
-                  <input
-                    class="form-check-input"
-                    type="radio"
-                    name="qteaching"
-                    id="qteaching"
-                    value="option2"
-                  />
-                  <label class="form-check-label" for="qteaching"
-                    >Disagree</label
-                  >
-                </div>
+              <div class="form-check form-check-inline col-sm-3">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="qteaching"
+                  id="qteaching"
+                  value="1"
+                />
+                <label class="form-check-label" for="qteaching">Agree</label>
+              </div>
 
-                <br />
-                <br />
+              <div class="form-check form-check-inline col-sm-3">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="qteaching"
+                  id="qteaching"
+                  value="2"
+                />
+                <label class="form-check-label" for="qteaching">Neutral</label>
+              </div>
 
-                <label for="eteaching" class="col-sm-3 col-form-label"
-                  >Encourages questions
-                </label>
-                <div class="form-check form-check-inline col-sm-3">
-                  <input
-                    class="form-check-input"
-                    type="radio"
-                    name="eteaching"
-                    id="eteaching"
-                    value="option1"
-                  />
-                  <label class="form-check-label" for="eteaching">Agree</label>
-                </div>
+              <div class="form-check form-check-inline">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="qteaching"
+                  id="qteaching"
+                  value="3"
+                />
+                <label class="form-check-label" for="qteaching">Disagree</label>
+              </div>
 
-                <div class="form-check form-check-inline col-sm-3">
-                  <input
-                    class="form-check-input"
-                    type="radio"
-                    name="eteaching"
-                    id="eteaching"
-                    value="option2"
-                  />
-                  <label class="form-check-label" for="eteaching"
-                    >Neutral</label
-                  >
-                </div>
+              <br />
+              <br />
 
-                <div class="form-check form-check-inline">
-                  <input
-                    class="form-check-input"
-                    type="radio"
-                    name="eteaching"
-                    id="eteaching"
-                    value="option2"
-                  />
-                  <label class="form-check-label" for="eteaching"
-                    >Disagree</label
-                  >
-                </div>
+              <label for="eteaching" class="col-sm-3 col-form-label"
+                >Encourages questions
+              </label>
+              <div class="form-check form-check-inline col-sm-3">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="eteaching"
+                  id="eteaching"
+                  value="1"
+                />
+                <label class="form-check-label" for="eteaching">Agree</label>
+              </div>
 
-                <br />
-                <br />
+              <div class="form-check form-check-inline col-sm-3">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="eteaching"
+                  id="eteaching"
+                  value="2"
+                />
+                <label class="form-check-label" for="eteaching">Neutral</label>
+              </div>
 
-                <label for="pteaching" class="col-sm-3 col-form-label"
-                  >Good pace of delivery
-                </label>
-                <div class="form-check form-check-inline col-sm-3">
-                  <input
-                    class="form-check-input"
-                    type="radio"
-                    name="pteaching"
-                    id="pteaching"
-                    value="option1"
-                  />
-                  <label class="form-check-label" for="pteaching">Agree</label>
-                </div>
+              <div class="form-check form-check-inline">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="eteaching"
+                  id="eteaching"
+                  value="3"
+                />
+                <label class="form-check-label" for="eteaching">Disagree</label>
+              </div>
 
-                <div class="form-check form-check-inline col-sm-3">
-                  <input
-                    class="form-check-input"
-                    type="radio"
-                    name="pteaching"
-                    id="pteaching"
-                    value="option2"
-                  />
-                  <label class="form-check-label" for="pteaching"
-                    >Neutral</label
-                  >
-                </div>
+              <br />
+              <br />
 
-                <div class="form-check form-check-inline">
-                  <input
-                    class="form-check-input"
-                    type="radio"
-                    name="pteaching"
-                    id="pteaching"
-                    value="option2"
-                  />
-                  <label class="form-check-label" for="pteaching"
-                    >Disagree</label
-                  >
-                </div>
+              <label for="pteaching" class="col-sm-3 col-form-label"
+                >Good pace of delivery
+              </label>
+              <div class="form-check form-check-inline col-sm-3">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="pteaching"
+                  id="pteaching"
+                  value="1"
+                />
+                <label class="form-check-label" for="pteaching">Agree</label>
+              </div>
 
-                <br />
-                <br />
+              <div class="form-check form-check-inline col-sm-3">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="pteaching"
+                  id="pteaching"
+                  value="2"
+                />
+                <label class="form-check-label" for="pteaching">Neutral</label>
+              </div>
 
-                <div class="form-group shadow-textare textarea">
-                  <label for="afeed"
-                    >Additional Feedback</label
-                  ><br /><br />
+              <div class="form-check form-check-inline">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="pteaching"
+                  id="pteaching"
+                  value="3"
+                />
+                <label class="form-check-label" for="pteaching">Disagree</label>
+              </div>
 
-                  <textarea
-                    style="resize: none;"
-                    class="form-control z-depth-1"
-                    id="afeed"
-                    name="afeed"
-                    rows="5"
-                    placeholder="Write something here..."
-                  ></textarea>
-                </div>
+              <br />
+              <br />
+              <br />
 
-                <div class="justify-content-center row mt-5 mb-4">
-                    <button type="submit" class="btn btn-primary primary-bg w-25">
-                      Submit
-                    </button>
-                  </div>
-                <!-- </div> -->
-              </form>
-            </div>
+              <div class="form-group shadow-textare textarea">
+                <label for="afeed">Additional Feedback</label><br /><br />
+
+                <textarea
+                  style="resize: none"
+                  class="form-control z-depth-1"
+                  id="afeed"
+                  name="afeed"
+                  rows="7"
+                  placeholder="Write something here..."
+                  required
+                ></textarea>
+              </div>
+
+              <div class="row justify-content-center py-5">
+                <button
+                  type="submit"
+                  class="btn btn-primary btn-lg primary-bg w-25"
+                >
+                  Submit
+                </button>
+              </div>
+              <!-- </div> -->
+            </form>
           </div>
         </div>
 
