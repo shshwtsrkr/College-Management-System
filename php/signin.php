@@ -15,18 +15,22 @@
   $result = mysqli_query($conn, $sql);
 
   if (mysqli_num_rows($result) > 0) {
-    include "../pages/semesterRegistration.html";
     // output data of each row
     // echo "User";
     // while($row = mysqli_fetch_array($result, MYSQLI_ASSOC)) {
-    //     echo "regno: " . $row["regno"]. " - Password: " . $row["passwd"]. "<br>";
-    //   }
+    //   echo "regno: " . $regno. " - Password: " . $row["passwd"]. "Is Registered: " . $row["is_registered"] . "<br>";
+    // }
+    $row = mysqli_fetch_array($result, MYSQLI_ASSOC);
+    // echo "regno: " . $regno. " - Password: " . $row["passwd"]. "Is Registered: " . $row["is_registered"] . "<br>";
+
+    if($row["is_registered"] == 1){
+      include "../pages/dashboard.html";
+    }else{
+      include "../pages/semesterRegistration.html";
+    }
+
   } else {
     echo "This is error from Sign in page";
     include "../pages/dummyError.html";
   }
-
-  // echo "This is error from Sign in page";
-  // include "../pages/dummyError.html";
-
 ?>
