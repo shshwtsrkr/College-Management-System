@@ -1,594 +1,875 @@
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
 
     <!--fonts-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
     <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
-        rel="stylesheet">
-    
-    <link rel="stylesheet" href="../styles/all.css">
-    <link rel="stylesheet" href="../styles/style.css">
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="../styles/all.css" />
+    <link rel="stylesheet" href="../styles/style.css" />
     <title>Notice Board</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="d-flex" id="wrapper">
-        <!-- Sidebar -->
-        <div class="bg-white" id="sidebar-wrapper">
-            <div class="sidebar-heading text-center py-4 primary-text fs-4 fw-bold text-uppercase border-bottom"><i
-                    class="fa-solid fa-building-columns"></i>&nbsp;CMS</div>
-            <div class="list-group list-group-flush my-3">
-                <a href="../pages/dashboard.html" class="list-group-item list-group-item-action bg-transparent second-text "><i
-                        class="fas fa-tachometer-alt me-2"></i>Dashboard</a>
-
-                <a href="../pages/semesterRegistration.html"
-                    class="list-group-item list-group-item-action bg-transparent second-text fw-bold"><i
-                        class="fas fa-brands fa-wpforms me-2"></i>Registration</a>
-
-                <a href="../pages/noticeBoard.html"
-                    class="list-group-item list-group-item-action bg-transparent second-text fw-bold active"><i
-                        class="fas fa-solid fa-scroll me-2"></i>Notice Board</a>
-
-                <a href="../pages/teacherFeedback.html"
-                    class="list-group-item list-group-item-action bg-transparent second-text fw-bold"><i
-                        class="fas fa-solid fa-comment me-2"></i>Teacher Feedback</a>
-
-                <a href="../pages/aboutUs.html"
-                    class="list-group-item list-group-item-action bg-transparent second-text fw-bold"><i
-                        class="fas fa-solid fa-address-card me-2"></i>About Us</a>
-
-                <a href="../pages/signin.html"
-                    class="list-group-item list-group-item-action bg-transparent text-danger fw-bold"><i
-                        class="fas fa-power-off me-2"></i>Logout</a>
-            </div>
+      <!-- Sidebar -->
+      <div class="bg-white" id="sidebar-wrapper">
+        <div
+          class="sidebar-heading text-center py-4 primary-text fs-4 fw-bold text-uppercase border-bottom"
+        >
+          <i class="fa-solid fa-building-columns"></i>&nbsp;CMS
         </div>
-        <!-- /#sidebar-wrapper -->
+        <div class="list-group list-group-flush my-3">
+          <a
+            href="../pages/dashboard.html"
+            class="list-group-item list-group-item-action bg-transparent second-text fw-bold"
+            ><i class="fas fa-tachometer-alt me-2"></i>Dashboard</a
+          >
 
-        <!-- Page Content -->
-        <div id="page-content-wrapper">
-            <nav class="navbar navbar-expand-lg navbar-light bg-transparent py-4 px-4">
-                <div class="d-flex align-items-center">
-                    <i class="fas fa-solid fa-bars primary-text fs-4 me-3" id="menu-toggle"></i>
-                    <h2 class="fs-2 m-0">Notice Board</h2>
-                </div>
+          <a
+            href="../pages/semesterRegistration.html"
+            class="list-group-item list-group-item-action bg-transparent second-text fw-bold"
+            ><i class="fas fa-brands fa-wpforms me-2"></i>Registration</a
+          >
 
+          <a
+            href="../pages/noticeBoard.html"
+            class="list-group-item list-group-item-action bg-transparent second-text fw-bold active"
+            ><i class="fas fa-solid fa-scroll me-2"></i>Notice Board</a
+          >
 
+          <a
+            href="../pages/teacherFeedback.html"
+            class="list-group-item list-group-item-action bg-transparent second-text fw-bold"
+            ><i class="fas fa-solid fa-comment me-2"></i>Teacher Feedback</a
+          >
 
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                        <li class="nav-item dropdown">
-                            <a class="nav-link second-text fw-bold" href="#" id="navbarDropdown" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                <i class="fas fa-user me-2"></i>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
+          <a
+            href="../pages/aboutUs.html"
+            class="list-group-item list-group-item-action bg-transparent second-text fw-bold"
+            ><i class="fas fa-solid fa-address-card me-2"></i>About Us</a
+          >
 
-            <div class="container-fluid px-4">
+          <a
+            href="../pages/signin.html"
+            class="list-group-item list-group-item-action bg-transparent text-danger fw-bold"
+            ><i class="fas fa-power-off me-2"></i>Logout</a
+          >
+        </div>
+      </div>
+      <!-- /#sidebar-wrapper -->
 
-                <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"
-                    rel="stylesheet">
-                <div class="page-content container note-has-grid">
+      <!-- Page Content -->
+      <div id="page-content-wrapper">
+        <nav
+          class="navbar navbar-expand-lg navbar-light bg-transparent py-4 px-4"
+        >
+          <div class="d-flex align-items-center">
+            <i
+              class="fas fa-solid fa-bars primary-text fs-4 me-3"
+              id="menu-toggle"
+            ></i>
+            <h2 class="fs-2 m-0">Notice Board</h2>
+          </div>
 
-                    <div class="tab-content bg-transparent">
-                        <div id="note-full-container" class="note-has-grid row">
-                            <div class="col-md-4 single-note-item all-category" style="
-  padding-bottom: 25px;">
-                                <div class="card card-body">
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link second-text fw-bold"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <i class="fas fa-user me-2"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
 
-                                    <span class="side-stick"></span>
-                                    <h5 class="note-title text-truncate w-75 mb-0" data-noteheading="Go for lunch"> <i
-                                            class="point fa fa-circle ml-1 font-10"></i></h5>
-                                    <p class="note-date font-12 text-muted">02 Aug 2022</p>
-                                    <div class="note-content">
-                                        <p class="note-inner-content text-muted"
-                                            data-notecontent="Blandit tempus porttitor aasfs. Integer posuere erat a ante venenatis.">
-                                            Odd semester begins
-                                        </p>
-                                    </div>
-
-                                </div>
-                            </div>
-                            <div class="col-md-4 single-note-item all-category note-important" style="">
-                                <div class="card card-body">
-                                    <span class="side-stick"></span>
-                                    <h5 class="note-title text-truncate w-75 mb-0" data-noteheading="Go for lunch"> <i
-                                            class="point fa fa-circle ml-1 font-10"></i></h5>
-                                    <p class="note-date font-12 text-muted">10 Aug 2022</p>
-                                    <div class="note-content">
-                                        <p class="note-inner-content text-muted"
-                                            data-notecontent="Blandit tempus porttitor aasfs. Integer posuere erat a ante venenatis.">
-                                            Sem registration ends</p>
-                                    </div>
-
-                                </div>
-                            </div>
-                            <div class="col-md-4 single-note-item all-category note-social" style="">
-                                <div class="card card-body">
-                                    <span class="side-stick"></span>
-                                    <h5 class="note-title text-truncate w-75 mb-0"
-                                        data-noteheading="Meeting with Mr.Jojo"><i
-                                            class="point fa fa-circle ml-1 font-10"></i></h5>
-                                    <p class="note-date font-12 text-muted">27 Aug-02 Sep 2022</p>
-                                    <div class="note-content">
-                                        <p class="note-inner-content text-muted"
-                                            data-notecontent="Blandit tempus porttitor aasfs. Integer posuere erat a ante venenatis.">
-                                            Quiz-I</p>
-                                    </div>
-
-                                </div>
-                            </div>
-                            <div class="col-md-4 single-note-item all-category note-business" style="
-  padding-bottom: 25px;">
-                                <div class="card card-body">
-                                    <span class="side-stick"></span>
-                                    <h5 class="note-title text-truncate w-75 mb-0"
-                                        data-noteheading="Give Review for design"> <i
-                                            class="point fa fa-circle ml-1 font-10"></i></h5>
-                                    <p class="note-date font-12 text-muted">27 Aug-02 Sep 2022</p>
-                                    <div class="note-content">
-                                        <p class="note-inner-content text-muted"
-                                            data-notecontent="Blandit tempus porttitor aasfs. Integer posuere erat a ante venenatis.">
-                                            Student Feedback</p>
-                                    </div>
-
-                                </div>
-                            </div>
-                            <div class="col-md-4 single-note-item all-category note-social" style="">
-                                <div class="card card-body">
-                                    <span class="side-stick"></span>
-                                    <h5 class="note-title text-truncate w-75 mb-0"
-                                        data-noteheading="Nightout with friends"> <i
-                                            class="point fa fa-circle ml-1 font-10"></i></h5>
-                                    <p class="note-date font-12 text-muted">09 Sep-16 Sep 2022</p>
-                                    <div class="note-content">
-                                        <p class="note-inner-content text-muted"
-                                            data-notecontent="Blandit tempus porttitor aasfs. Integer posuere erat a ante venenatis.">
-                                            Sessional-I </p>
-                                    </div>
-
-                                </div>
-                            </div>
-                            <div class="col-md-4 single-note-item all-category note-important" style="">
-                                <div class="card card-body">
-                                    <span class="side-stick"></span>
-                                    <h5 class="note-title text-truncate w-75 mb-0"
-                                        data-noteheading="Launch new template"> <i
-                                            class="point fa fa-circle ml-1 font-10"></i></h5>
-
-                                    <p class="note-date font-12 text-muted">03 Oct-07 Oct 2022</p>
-                                    <div class="note-content">
-                                        <p class="note-inner-content text-muted"
-                                            data-notecontent="Blandit tempus porttitor aasfs. Integer posuere erat a ante venenatis.">
-                                            Mid-sem break</p>
-                                    </div>
-
-                                </div>
-                            </div>
-                            <div class="col-md-4 single-note-item all-category note-social" style="
-  padding-bottom: 25px;">
-                                <div class="card card-body">
-                                    <span class="side-stick"></span>
-                                    <h5 class="note-title text-truncate w-75 mb-0" data-noteheading="Change a Design"><i
-                                            class="point fa fa-circle ml-1 font-10"></i></h5>
-                                    <p class="note-date font-12 text-muted">17 Oct-22 OCt 2022</p>
-                                    <div class="note-content">
-                                        <p class="note-inner-content text-muted"
-                                            data-notecontent="Blandit tempus porttitor aasfs. Integer posuere erat a ante venenatis.">
-                                            Quiz-II</p>
-                                    </div>
-
-                                </div>
-                            </div>
-                            <div class="col-md-4 single-note-item all-category note-business" style="">
-                                <div class="card card-body">
-                                    <span class="side-stick"></span>
-                                    <h5 class="note-title text-truncate w-75 mb-0"
-                                        data-noteheading="Give review for foods"> <i
-                                            class="point fa fa-circle ml-1 font-10"></i></h5>
-                                    <p class="note-date font-12 text-muted">17 Oct-22 Oct 2022</p>
-                                    <div class="note-content">
-                                        <p class="note-inner-content text-muted"
-                                            data-notecontent="Blandit tempus porttitor aasfs. Integer posuere erat a ante venenatis.">
-                                            Student feedback(II)
-                                            <!--</p-->
-                                        </p>
-                                    </div>
-
-                                </div>
-                            </div>
-                            <div class="col-md-4 single-note-item all-category note-important" style="">
-                                <div class="card card-body">
-                                    <span class="side-stick"></span>
-                                    <h5 class="note-title text-truncate w-75 mb-0"
-                                        data-noteheading="Give salary to employee"> <i
-                                            class="point fa fa-circle ml-1 font-10"></i></h5>
-                                    <p class="note-date font-12 text-muted">05 Nov-11 Nov 2022</p>
-                                    <div class="note-content">
-                                        <p class="note-inner-content text-muted"
-                                            data-notecontent="Blandit tempus porttitor aasfs. Integer posuere erat a ante venenatis.">
-                                            Sessional-II
-                                        </p>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
+        <div class="container-fluid px-4">
+          <link
+            href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"
+            rel="stylesheet"
+          />
+          <div class="page-content container note-has-grid">
+            <div class="tab-content bg-transparent">
+              <div id="note-full-container" class="note-has-grid row">
+                <div
+                  class="col-md-4 single-note-item all-category"
+                  style="padding-bottom: 25px"
+                >
+                  <div class="card card-body">
+                    <span class="side-stick"></span>
+                    <h5
+                      class="note-title text-truncate w-75 mb-0"
+                      data-noteheading="Go for lunch"
+                    >
+                      <i class="point fa fa-circle ml-1 font-10"></i>
+                    </h5>
+                    <p class="note-date font-12 text-muted">02 Aug 2022</p>
+                    <div class="note-content">
+                      <p
+                        class="note-inner-content text-muted"
+                        data-notecontent="Blandit tempus porttitor aasfs. Integer posuere erat a ante venenatis."
+                      >
+                        Odd semester begins
+                      </p>
                     </div>
-
-
-
-
-
-
-                    <div class="tab-content bg-transparent">
-                        <div id="note-full-container" class="note-has-grid row">
-                            <div class="col-md-4 single-note-item all-category" style="
-  padding-bottom: 25px;">
-                                <div class="card card-body">
-
-                                    <span class="side-stick"></span>
-                                    <h5 class="note-title text-truncate w-75 mb-0" data-noteheading="Go for lunch"> <i
-                                            class="point fa fa-circle ml-1 font-10"></i></h5>
-                                    <p class="note-date font-12 text-muted">14 Nov-19 Nov 2022</p>
-                                    <div class="note-content">
-                                        <p class="note-inner-content text-muted"
-                                            data-notecontent="Blandit tempus porttitor aasfs. Integer posuere erat a ante venenatis.">
-                                            Lab Sessionals
-                                        </p>
-                                    </div>
-
-                                </div>
-                            </div>
-                            <div class="col-md-4 single-note-item all-category note-important" style="">
-                                <div class="card card-body">
-                                    <span class="side-stick"></span>
-                                    <h5 class="note-title text-truncate w-75 mb-0" data-noteheading="Go for lunch"> <i
-                                            class="point fa fa-circle ml-1 font-10"></i></h5>
-                                    <p class="note-date font-12 text-muted">17 Nov-19 Nov 2022</p>
-                                    <div class="note-content">
-                                        <p class="note-inner-content text-muted"
-                                            data-notecontent="Blandit tempus porttitor aasfs. Integer posuere erat a ante venenatis.">
-                                            Re-Sessionals</p>
-                                    </div>
-
-                                </div>
-                            </div>
-                            <div class="col-md-4 single-note-item all-category note-social" style="">
-                                <div class="card card-body">
-                                    <span class="side-stick"></span>
-                                    <h5 class="note-title text-truncate w-75 mb-0"
-                                        data-noteheading="Meeting with Mr.Jojo"><i
-                                            class="point fa fa-circle ml-1 font-10"></i></h5>
-                                    <p class="note-date font-12 text-muted">21 Nov 2022</p>
-                                    <div class="note-content">
-                                        <p class="note-inner-content text-muted"
-                                            data-notecontent="Blandit tempus porttitor aasfs. Integer posuere erat a ante venenatis.">
-                                            Last working day</p>
-                                    </div>
-
-                                </div>
-                            </div>
-                            <div class="col-md-4 single-note-item all-category note-business" style="
-  padding-bottom: 25px;">
-                                <div class="card card-body">
-                                    <span class="side-stick"></span>
-                                    <h5 class="note-title text-truncate w-75 mb-0"
-                                        data-noteheading="Give Review for design"> <i
-                                            class="point fa fa-circle ml-1 font-10"></i></h5>
-                                    <p class="note-date font-12 text-muted">24 Nov-09 Dec 2022</p>
-                                    <div class="note-content">
-                                        <p class="note-inner-content text-muted"
-                                            data-notecontent="Blandit tempus porttitor aasfs. Integer posuere erat a ante venenatis.">
-                                            Odd-sem Exam</p>
-                                    </div>
-
-                                </div>
-                            </div>
-                            <div class="col-md-4 single-note-item all-category note-social" style="">
-                                <div class="card card-body">
-                                    <span class="side-stick"></span>
-                                    <h5 class="note-title text-truncate w-75 mb-0"
-                                        data-noteheading="Nightout with friends"> <i
-                                            class="point fa fa-circle ml-1 font-10"></i></h5>
-                                    <p class="note-date font-12 text-muted">20 Dec 2022</p>
-                                    <div class="note-content">
-                                        <p class="note-inner-content text-muted"
-                                            data-notecontent="Blandit tempus porttitor aasfs. Integer posuere erat a ante venenatis.">
-                                            Result day</p>
-                                    </div>
-
-                                </div>
-                            </div>
-                            <div class="col-md-4 single-note-item all-category note-important" style="">
-                                <div class="card card-body">
-                                    <span class="side-stick"></span>
-                                    <h5 class="note-title text-truncate w-75 mb-0"
-                                        data-noteheading="Launch new template"> <i
-                                            class="point fa fa-circle ml-1 font-10"></i></h5>
-
-                                    <p class="note-date font-12 text-muted">23 Dec 2022</p>
-                                    <div class="note-content">
-                                        <p class="note-inner-content text-muted"
-                                            data-notecontent="Blandit tempus porttitor aasfs. Integer posuere erat a ante venenatis.">
-                                            Additional Lab exams</p>
-                                    </div>
-
-                                </div>
-                            </div>
-                            <div class="col-md-4 single-note-item all-category note-social" style="
-  padding-bottom: 25px;">
-                                <div class="card card-body">
-                                    <span class="side-stick"></span>
-                                    <h5 class="note-title text-truncate w-75 mb-0" data-noteheading="Change a Design"><i
-                                            class="point fa fa-circle ml-1 font-10"></i></h5>
-                                    <p class="note-date font-12 text-muted">30 Dec 2022</p>
-                                    <div class="note-content">
-                                        <p class="note-inner-content text-muted"
-                                            data-notecontent="Blandit tempus porttitor aasfs. Integer posuere erat a ante venenatis.">
-                                            Supplementary exam application</p>
-                                    </div>
-
-                                </div>
-                            </div>
-                            <div class="col-md-4 single-note-item all-category note-business" style="">
-                                <div class="card card-body">
-                                    <span class="side-stick"></span>
-                                    <h5 class="note-title text-truncate w-75 mb-0"
-                                        data-noteheading="Give review for foods"> <i
-                                            class="point fa fa-circle ml-1 font-10"></i></h5>
-                                    <p class="note-date font-12 text-muted">06 Jan-17 Jan 2022</p>
-                                    <div class="note-content">
-                                        <p class="note-inner-content text-muted"
-                                            data-notecontent="Blandit tempus porttitor aasfs. Integer posuere erat a ante venenatis.">
-                                            Supplementary exams
-                                            <!--</p-->
-                                        </p>
-                                    </div>
-
-                                </div>
-                            </div>
-                            <div class="col-md-4 single-note-item all-category note-important" style="">
-                                <div class="card card-body">
-                                    <span class="side-stick"></span>
-                                    <h5 class="note-title text-truncate w-75 mb-0"
-                                        data-noteheading="Give salary to employee"> <i
-                                            class="point fa fa-circle ml-1 font-10"></i></h5>
-                                    <p class="note-date font-12 text-muted">09 Jan 2022</p>
-                                    <div class="note-content">
-                                        <p class="note-inner-content text-muted"
-                                            data-notecontent="Blandit tempus porttitor aasfs. Integer posuere erat a ante venenatis.">
-                                            Even sem begins
-                                        </p>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <!-- MAKE CHANGES ABOVE THIS -->
-
-
+                  </div>
                 </div>
+                <div
+                  class="col-md-4 single-note-item all-category note-important"
+                  style=""
+                >
+                  <div class="card card-body">
+                    <span class="side-stick"></span>
+                    <h5
+                      class="note-title text-truncate w-75 mb-0"
+                      data-noteheading="Go for lunch"
+                    >
+                      <i class="point fa fa-circle ml-1 font-10"></i>
+                    </h5>
+                    <p class="note-date font-12 text-muted">10 Aug 2022</p>
+                    <div class="note-content">
+                      <p
+                        class="note-inner-content text-muted"
+                        data-notecontent="Blandit tempus porttitor aasfs. Integer posuere erat a ante venenatis."
+                      >
+                        Sem registration ends
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="col-md-4 single-note-item all-category note-social"
+                  style=""
+                >
+                  <div class="card card-body">
+                    <span class="side-stick"></span>
+                    <h5
+                      class="note-title text-truncate w-75 mb-0"
+                      data-noteheading="Meeting with Mr.Jojo"
+                    >
+                      <i class="point fa fa-circle ml-1 font-10"></i>
+                    </h5>
+                    <p class="note-date font-12 text-muted">
+                      27 Aug-02 Sep 2022
+                    </p>
+                    <div class="note-content">
+                      <p
+                        class="note-inner-content text-muted"
+                        data-notecontent="Blandit tempus porttitor aasfs. Integer posuere erat a ante venenatis."
+                      >
+                        Quiz-I
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="col-md-4 single-note-item all-category note-business"
+                  style="padding-bottom: 25px"
+                >
+                  <div class="card card-body">
+                    <span class="side-stick"></span>
+                    <h5
+                      class="note-title text-truncate w-75 mb-0"
+                      data-noteheading="Give Review for design"
+                    >
+                      <i class="point fa fa-circle ml-1 font-10"></i>
+                    </h5>
+                    <p class="note-date font-12 text-muted">
+                      27 Aug-02 Sep 2022
+                    </p>
+                    <div class="note-content">
+                      <p
+                        class="note-inner-content text-muted"
+                        data-notecontent="Blandit tempus porttitor aasfs. Integer posuere erat a ante venenatis."
+                      >
+                        Student Feedback
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="col-md-4 single-note-item all-category note-social"
+                  style=""
+                >
+                  <div class="card card-body">
+                    <span class="side-stick"></span>
+                    <h5
+                      class="note-title text-truncate w-75 mb-0"
+                      data-noteheading="Nightout with friends"
+                    >
+                      <i class="point fa fa-circle ml-1 font-10"></i>
+                    </h5>
+                    <p class="note-date font-12 text-muted">
+                      09 Sep-16 Sep 2022
+                    </p>
+                    <div class="note-content">
+                      <p
+                        class="note-inner-content text-muted"
+                        data-notecontent="Blandit tempus porttitor aasfs. Integer posuere erat a ante venenatis."
+                      >
+                        Sessional-I
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="col-md-4 single-note-item all-category note-important"
+                  style=""
+                >
+                  <div class="card card-body">
+                    <span class="side-stick"></span>
+                    <h5
+                      class="note-title text-truncate w-75 mb-0"
+                      data-noteheading="Launch new template"
+                    >
+                      <i class="point fa fa-circle ml-1 font-10"></i>
+                    </h5>
+
+                    <p class="note-date font-12 text-muted">
+                      03 Oct-07 Oct 2022
+                    </p>
+                    <div class="note-content">
+                      <p
+                        class="note-inner-content text-muted"
+                        data-notecontent="Blandit tempus porttitor aasfs. Integer posuere erat a ante venenatis."
+                      >
+                        Mid-sem break
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="col-md-4 single-note-item all-category note-social"
+                  style="padding-bottom: 25px"
+                >
+                  <div class="card card-body">
+                    <span class="side-stick"></span>
+                    <h5
+                      class="note-title text-truncate w-75 mb-0"
+                      data-noteheading="Change a Design"
+                    >
+                      <i class="point fa fa-circle ml-1 font-10"></i>
+                    </h5>
+                    <p class="note-date font-12 text-muted">
+                      17 Oct-22 OCt 2022
+                    </p>
+                    <div class="note-content">
+                      <p
+                        class="note-inner-content text-muted"
+                        data-notecontent="Blandit tempus porttitor aasfs. Integer posuere erat a ante venenatis."
+                      >
+                        Quiz-II
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="col-md-4 single-note-item all-category note-business"
+                  style=""
+                >
+                  <div class="card card-body">
+                    <span class="side-stick"></span>
+                    <h5
+                      class="note-title text-truncate w-75 mb-0"
+                      data-noteheading="Give review for foods"
+                    >
+                      <i class="point fa fa-circle ml-1 font-10"></i>
+                    </h5>
+                    <p class="note-date font-12 text-muted">
+                      17 Oct-22 Oct 2022
+                    </p>
+                    <div class="note-content">
+                      <p
+                        class="note-inner-content text-muted"
+                        data-notecontent="Blandit tempus porttitor aasfs. Integer posuere erat a ante venenatis."
+                      >
+                        Student feedback(II)
+                        <!--</p-->
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="col-md-4 single-note-item all-category note-important"
+                  style=""
+                >
+                  <div class="card card-body">
+                    <span class="side-stick"></span>
+                    <h5
+                      class="note-title text-truncate w-75 mb-0"
+                      data-noteheading="Give salary to employee"
+                    >
+                      <i class="point fa fa-circle ml-1 font-10"></i>
+                    </h5>
+                    <p class="note-date font-12 text-muted">
+                      05 Nov-11 Nov 2022
+                    </p>
+                    <div class="note-content">
+                      <p
+                        class="note-inner-content text-muted"
+                        data-notecontent="Blandit tempus porttitor aasfs. Integer posuere erat a ante venenatis."
+                      >
+                        Sessional-II
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
 
-            <!-- /#page-content-wrapper -->
+            <div class="tab-content bg-transparent">
+              <div id="note-full-container" class="note-has-grid row">
+                <div
+                  class="col-md-4 single-note-item all-category"
+                  style="padding-bottom: 25px"
+                >
+                  <div class="card card-body">
+                    <span class="side-stick"></span>
+                    <h5
+                      class="note-title text-truncate w-75 mb-0"
+                      data-noteheading="Go for lunch"
+                    >
+                      <i class="point fa fa-circle ml-1 font-10"></i>
+                    </h5>
+                    <p class="note-date font-12 text-muted">
+                      14 Nov-19 Nov 2022
+                    </p>
+                    <div class="note-content">
+                      <p
+                        class="note-inner-content text-muted"
+                        data-notecontent="Blandit tempus porttitor aasfs. Integer posuere erat a ante venenatis."
+                      >
+                        Lab Sessionals
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="col-md-4 single-note-item all-category note-important"
+                  style=""
+                >
+                  <div class="card card-body">
+                    <span class="side-stick"></span>
+                    <h5
+                      class="note-title text-truncate w-75 mb-0"
+                      data-noteheading="Go for lunch"
+                    >
+                      <i class="point fa fa-circle ml-1 font-10"></i>
+                    </h5>
+                    <p class="note-date font-12 text-muted">
+                      17 Nov-19 Nov 2022
+                    </p>
+                    <div class="note-content">
+                      <p
+                        class="note-inner-content text-muted"
+                        data-notecontent="Blandit tempus porttitor aasfs. Integer posuere erat a ante venenatis."
+                      >
+                        Re-Sessionals
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="col-md-4 single-note-item all-category note-social"
+                  style=""
+                >
+                  <div class="card card-body">
+                    <span class="side-stick"></span>
+                    <h5
+                      class="note-title text-truncate w-75 mb-0"
+                      data-noteheading="Meeting with Mr.Jojo"
+                    >
+                      <i class="point fa fa-circle ml-1 font-10"></i>
+                    </h5>
+                    <p class="note-date font-12 text-muted">21 Nov 2022</p>
+                    <div class="note-content">
+                      <p
+                        class="note-inner-content text-muted"
+                        data-notecontent="Blandit tempus porttitor aasfs. Integer posuere erat a ante venenatis."
+                      >
+                        Last working day
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="col-md-4 single-note-item all-category note-business"
+                  style="padding-bottom: 25px"
+                >
+                  <div class="card card-body">
+                    <span class="side-stick"></span>
+                    <h5
+                      class="note-title text-truncate w-75 mb-0"
+                      data-noteheading="Give Review for design"
+                    >
+                      <i class="point fa fa-circle ml-1 font-10"></i>
+                    </h5>
+                    <p class="note-date font-12 text-muted">
+                      24 Nov-09 Dec 2022
+                    </p>
+                    <div class="note-content">
+                      <p
+                        class="note-inner-content text-muted"
+                        data-notecontent="Blandit tempus porttitor aasfs. Integer posuere erat a ante venenatis."
+                      >
+                        Odd-sem Exam
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="col-md-4 single-note-item all-category note-social"
+                  style=""
+                >
+                  <div class="card card-body">
+                    <span class="side-stick"></span>
+                    <h5
+                      class="note-title text-truncate w-75 mb-0"
+                      data-noteheading="Nightout with friends"
+                    >
+                      <i class="point fa fa-circle ml-1 font-10"></i>
+                    </h5>
+                    <p class="note-date font-12 text-muted">20 Dec 2022</p>
+                    <div class="note-content">
+                      <p
+                        class="note-inner-content text-muted"
+                        data-notecontent="Blandit tempus porttitor aasfs. Integer posuere erat a ante venenatis."
+                      >
+                        Result day
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="col-md-4 single-note-item all-category note-important"
+                  style=""
+                >
+                  <div class="card card-body">
+                    <span class="side-stick"></span>
+                    <h5
+                      class="note-title text-truncate w-75 mb-0"
+                      data-noteheading="Launch new template"
+                    >
+                      <i class="point fa fa-circle ml-1 font-10"></i>
+                    </h5>
 
+                    <p class="note-date font-12 text-muted">23 Dec 2022</p>
+                    <div class="note-content">
+                      <p
+                        class="note-inner-content text-muted"
+                        data-notecontent="Blandit tempus porttitor aasfs. Integer posuere erat a ante venenatis."
+                      >
+                        Additional Lab exams
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="col-md-4 single-note-item all-category note-social"
+                  style="padding-bottom: 25px"
+                >
+                  <div class="card card-body">
+                    <span class="side-stick"></span>
+                    <h5
+                      class="note-title text-truncate w-75 mb-0"
+                      data-noteheading="Change a Design"
+                    >
+                      <i class="point fa fa-circle ml-1 font-10"></i>
+                    </h5>
+                    <p class="note-date font-12 text-muted">30 Dec 2022</p>
+                    <div class="note-content">
+                      <p
+                        class="note-inner-content text-muted"
+                        data-notecontent="Blandit tempus porttitor aasfs. Integer posuere erat a ante venenatis."
+                      >
+                        Supplementary exam application
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="col-md-4 single-note-item all-category note-business"
+                  style=""
+                >
+                  <div class="card card-body">
+                    <span class="side-stick"></span>
+                    <h5
+                      class="note-title text-truncate w-75 mb-0"
+                      data-noteheading="Give review for foods"
+                    >
+                      <i class="point fa fa-circle ml-1 font-10"></i>
+                    </h5>
+                    <p class="note-date font-12 text-muted">
+                      06 Jan-17 Jan 2022
+                    </p>
+                    <div class="note-content">
+                      <p
+                        class="note-inner-content text-muted"
+                        data-notecontent="Blandit tempus porttitor aasfs. Integer posuere erat a ante venenatis."
+                      >
+                        Supplementary exams
+                        <!--</p-->
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="col-md-4 single-note-item all-category note-important"
+                  style=""
+                >
+                  <div class="card card-body">
+                    <span class="side-stick"></span>
+                    <h5
+                      class="note-title text-truncate w-75 mb-0"
+                      data-noteheading="Give salary to employee"
+                    >
+                      <i class="point fa fa-circle ml-1 font-10"></i>
+                    </h5>
+                    <p class="note-date font-12 text-muted">09 Jan 2022</p>
+                    <div class="note-content">
+                      <p
+                        class="note-inner-content text-muted"
+                        data-notecontent="Blandit tempus porttitor aasfs. Integer posuere erat a ante venenatis."
+                      >
+                        Even sem begins
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
 
-            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"></script>
-            <script>
-                var el = document.getElementById("wrapper");
-                var toggleButton = document.getElementById("menu-toggle");
-
-                toggleButton.onclick = function () {
-                    el.classList.toggle("toggled");
-                };
-            </script>
-            <!-- Code injected by live-server -->
-            <script>
-                // <![CDATA[  <-- For SVG support
-                if ('WebSocket' in window) {
-                    (function () {
-                        function refreshCSS() {
-                            var sheets = [].slice.call(document.getElementsByTagName("link"));
-                            var head = document.getElementsByTagName("head")[0];
-                            for (var i = 0; i < sheets.length; ++i) {
-                                var elem = sheets[i];
-                                var parent = elem.parentElement || head;
-                                parent.removeChild(elem);
-                                var rel = elem.rel;
-                                if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
-                                    var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
-                                    elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
-                                }
-                                parent.appendChild(elem);
-                            }
-                        }
-                        var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
-                        var address = protocol + window.location.host + window.location.pathname + '/ws';
-                        var socket = new WebSocket(address);
-                        socket.onmessage = function (msg) {
-                            if (msg.data == 'reload') window.location.reload();
-                            else if (msg.data == 'refreshcss') refreshCSS();
-                        };
-                        if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
-                            console.log('Live reload enabled.');
-                            sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
-                        }
-                    })();
-                }
-                else {
-                    console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
-                }
-  // ]]>
-            </script>
-
-
-            <!-- Code injected by live-server -->
-            <script>
-                // <![CDATA[  <-- For SVG support
-                if ('WebSocket' in window) {
-                    (function () {
-                        function refreshCSS() {
-                            var sheets = [].slice.call(document.getElementsByTagName("link"));
-                            var head = document.getElementsByTagName("head")[0];
-                            for (var i = 0; i < sheets.length; ++i) {
-                                var elem = sheets[i];
-                                var parent = elem.parentElement || head;
-                                parent.removeChild(elem);
-                                var rel = elem.rel;
-                                if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
-                                    var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
-                                    elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
-                                }
-                                parent.appendChild(elem);
-                            }
-                        }
-                        var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
-                        var address = protocol + window.location.host + window.location.pathname + '/ws';
-                        var socket = new WebSocket(address);
-                        socket.onmessage = function (msg) {
-                            if (msg.data == 'reload') window.location.reload();
-                            else if (msg.data == 'refreshcss') refreshCSS();
-                        };
-                        if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
-                            console.log('Live reload enabled.');
-                            sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
-                        }
-                    })();
-                }
-                else {
-                    console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
-                }
-	// ]]>
-            </script>
-            <!-- Code injected by live-server -->
-            <script>
-                // <![CDATA[  <-- For SVG support
-                if ('WebSocket' in window) {
-                    (function () {
-                        function refreshCSS() {
-                            var sheets = [].slice.call(document.getElementsByTagName("link"));
-                            var head = document.getElementsByTagName("head")[0];
-                            for (var i = 0; i < sheets.length; ++i) {
-                                var elem = sheets[i];
-                                var parent = elem.parentElement || head;
-                                parent.removeChild(elem);
-                                var rel = elem.rel;
-                                if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
-                                    var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
-                                    elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
-                                }
-                                parent.appendChild(elem);
-                            }
-                        }
-                        var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
-                        var address = protocol + window.location.host + window.location.pathname + '/ws';
-                        var socket = new WebSocket(address);
-                        socket.onmessage = function (msg) {
-                            if (msg.data == 'reload') window.location.reload();
-                            else if (msg.data == 'refreshcss') refreshCSS();
-                        };
-                        if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
-                            console.log('Live reload enabled.');
-                            sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
-                        }
-                    })();
-                }
-                else {
-                    console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
-                }
-	// ]]>
-            </script>
-            <!-- Code injected by live-server -->
-            <script>
-                // <![CDATA[  <-- For SVG support
-                if ('WebSocket' in window) {
-                    (function () {
-                        function refreshCSS() {
-                            var sheets = [].slice.call(document.getElementsByTagName("link"));
-                            var head = document.getElementsByTagName("head")[0];
-                            for (var i = 0; i < sheets.length; ++i) {
-                                var elem = sheets[i];
-                                var parent = elem.parentElement || head;
-                                parent.removeChild(elem);
-                                var rel = elem.rel;
-                                if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
-                                    var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
-                                    elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
-                                }
-                                parent.appendChild(elem);
-                            }
-                        }
-                        var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
-                        var address = protocol + window.location.host + window.location.pathname + '/ws';
-                        var socket = new WebSocket(address);
-                        socket.onmessage = function (msg) {
-                            if (msg.data == 'reload') window.location.reload();
-                            else if (msg.data == 'refreshcss') refreshCSS();
-                        };
-                        if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
-                            console.log('Live reload enabled.');
-                            sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
-                        }
-                    })();
-                }
-                else {
-                    console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
-                }
-	// ]]>
-            </script>
+            <!-- MAKE CHANGES ABOVE THIS -->
+          </div>
         </div>
-    </div><!-- Code injected by live-server -->
-    <script>
-        // <![CDATA[  <-- For SVG support
-        if ('WebSocket' in window) {
+
+        <!-- /#page-content-wrapper -->
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"></script>
+        <script>
+          var el = document.getElementById("wrapper");
+          var toggleButton = document.getElementById("menu-toggle");
+
+          toggleButton.onclick = function () {
+            el.classList.toggle("toggled");
+          };
+        </script>
+        <!-- Code injected by live-server -->
+        <script>
+          // <![CDATA[  <-- For SVG support
+          if ("WebSocket" in window) {
             (function () {
-                function refreshCSS() {
-                    var sheets = [].slice.call(document.getElementsByTagName("link"));
-                    var head = document.getElementsByTagName("head")[0];
-                    for (var i = 0; i < sheets.length; ++i) {
-                        var elem = sheets[i];
-                        var parent = elem.parentElement || head;
-                        parent.removeChild(elem);
-                        var rel = elem.rel;
-                        if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
-                            var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
-                            elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
-                        }
-                        parent.appendChild(elem);
-                    }
+              function refreshCSS() {
+                var sheets = [].slice.call(
+                  document.getElementsByTagName("link")
+                );
+                var head = document.getElementsByTagName("head")[0];
+                for (var i = 0; i < sheets.length; ++i) {
+                  var elem = sheets[i];
+                  var parent = elem.parentElement || head;
+                  parent.removeChild(elem);
+                  var rel = elem.rel;
+                  if (
+                    (elem.href && typeof rel != "string") ||
+                    rel.length == 0 ||
+                    rel.toLowerCase() == "stylesheet"
+                  ) {
+                    var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, "");
+                    elem.href =
+                      url +
+                      (url.indexOf("?") >= 0 ? "&" : "?") +
+                      "_cacheOverride=" +
+                      new Date().valueOf();
+                  }
+                  parent.appendChild(elem);
                 }
-                var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
-                var address = protocol + window.location.host + window.location.pathname + '/ws';
-                var socket = new WebSocket(address);
-                socket.onmessage = function (msg) {
-                    if (msg.data == 'reload') window.location.reload();
-                    else if (msg.data == 'refreshcss') refreshCSS();
-                };
-                if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
-                    console.log('Live reload enabled.');
-                    sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
-                }
+              }
+              var protocol =
+                window.location.protocol === "http:" ? "ws://" : "wss://";
+              var address =
+                protocol +
+                window.location.host +
+                window.location.pathname +
+                "/ws";
+              var socket = new WebSocket(address);
+              socket.onmessage = function (msg) {
+                if (msg.data == "reload") window.location.reload();
+                else if (msg.data == "refreshcss") refreshCSS();
+              };
+              if (
+                sessionStorage &&
+                !sessionStorage.getItem("IsThisFirstTime_Log_From_LiveServer")
+              ) {
+                console.log("Live reload enabled.");
+                sessionStorage.setItem(
+                  "IsThisFirstTime_Log_From_LiveServer",
+                  true
+                );
+              }
             })();
-        }
-        else {
-            console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
-        }
-	// ]]>
-    </script>
-</body>
+          } else {
+            console.error(
+              "Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading."
+            );
+          }
+          // ]]>
+        </script>
 
+        <!-- Code injected by live-server -->
+        <script>
+          // <![CDATA[  <-- For SVG support
+          if ("WebSocket" in window) {
+            (function () {
+              function refreshCSS() {
+                var sheets = [].slice.call(
+                  document.getElementsByTagName("link")
+                );
+                var head = document.getElementsByTagName("head")[0];
+                for (var i = 0; i < sheets.length; ++i) {
+                  var elem = sheets[i];
+                  var parent = elem.parentElement || head;
+                  parent.removeChild(elem);
+                  var rel = elem.rel;
+                  if (
+                    (elem.href && typeof rel != "string") ||
+                    rel.length == 0 ||
+                    rel.toLowerCase() == "stylesheet"
+                  ) {
+                    var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, "");
+                    elem.href =
+                      url +
+                      (url.indexOf("?") >= 0 ? "&" : "?") +
+                      "_cacheOverride=" +
+                      new Date().valueOf();
+                  }
+                  parent.appendChild(elem);
+                }
+              }
+              var protocol =
+                window.location.protocol === "http:" ? "ws://" : "wss://";
+              var address =
+                protocol +
+                window.location.host +
+                window.location.pathname +
+                "/ws";
+              var socket = new WebSocket(address);
+              socket.onmessage = function (msg) {
+                if (msg.data == "reload") window.location.reload();
+                else if (msg.data == "refreshcss") refreshCSS();
+              };
+              if (
+                sessionStorage &&
+                !sessionStorage.getItem("IsThisFirstTime_Log_From_LiveServer")
+              ) {
+                console.log("Live reload enabled.");
+                sessionStorage.setItem(
+                  "IsThisFirstTime_Log_From_LiveServer",
+                  true
+                );
+              }
+            })();
+          } else {
+            console.error(
+              "Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading."
+            );
+          }
+          // ]]>
+        </script>
+        <!-- Code injected by live-server -->
+        <script>
+          // <![CDATA[  <-- For SVG support
+          if ("WebSocket" in window) {
+            (function () {
+              function refreshCSS() {
+                var sheets = [].slice.call(
+                  document.getElementsByTagName("link")
+                );
+                var head = document.getElementsByTagName("head")[0];
+                for (var i = 0; i < sheets.length; ++i) {
+                  var elem = sheets[i];
+                  var parent = elem.parentElement || head;
+                  parent.removeChild(elem);
+                  var rel = elem.rel;
+                  if (
+                    (elem.href && typeof rel != "string") ||
+                    rel.length == 0 ||
+                    rel.toLowerCase() == "stylesheet"
+                  ) {
+                    var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, "");
+                    elem.href =
+                      url +
+                      (url.indexOf("?") >= 0 ? "&" : "?") +
+                      "_cacheOverride=" +
+                      new Date().valueOf();
+                  }
+                  parent.appendChild(elem);
+                }
+              }
+              var protocol =
+                window.location.protocol === "http:" ? "ws://" : "wss://";
+              var address =
+                protocol +
+                window.location.host +
+                window.location.pathname +
+                "/ws";
+              var socket = new WebSocket(address);
+              socket.onmessage = function (msg) {
+                if (msg.data == "reload") window.location.reload();
+                else if (msg.data == "refreshcss") refreshCSS();
+              };
+              if (
+                sessionStorage &&
+                !sessionStorage.getItem("IsThisFirstTime_Log_From_LiveServer")
+              ) {
+                console.log("Live reload enabled.");
+                sessionStorage.setItem(
+                  "IsThisFirstTime_Log_From_LiveServer",
+                  true
+                );
+              }
+            })();
+          } else {
+            console.error(
+              "Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading."
+            );
+          }
+          // ]]>
+        </script>
+        <!-- Code injected by live-server -->
+        <script>
+          // <![CDATA[  <-- For SVG support
+          if ("WebSocket" in window) {
+            (function () {
+              function refreshCSS() {
+                var sheets = [].slice.call(
+                  document.getElementsByTagName("link")
+                );
+                var head = document.getElementsByTagName("head")[0];
+                for (var i = 0; i < sheets.length; ++i) {
+                  var elem = sheets[i];
+                  var parent = elem.parentElement || head;
+                  parent.removeChild(elem);
+                  var rel = elem.rel;
+                  if (
+                    (elem.href && typeof rel != "string") ||
+                    rel.length == 0 ||
+                    rel.toLowerCase() == "stylesheet"
+                  ) {
+                    var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, "");
+                    elem.href =
+                      url +
+                      (url.indexOf("?") >= 0 ? "&" : "?") +
+                      "_cacheOverride=" +
+                      new Date().valueOf();
+                  }
+                  parent.appendChild(elem);
+                }
+              }
+              var protocol =
+                window.location.protocol === "http:" ? "ws://" : "wss://";
+              var address =
+                protocol +
+                window.location.host +
+                window.location.pathname +
+                "/ws";
+              var socket = new WebSocket(address);
+              socket.onmessage = function (msg) {
+                if (msg.data == "reload") window.location.reload();
+                else if (msg.data == "refreshcss") refreshCSS();
+              };
+              if (
+                sessionStorage &&
+                !sessionStorage.getItem("IsThisFirstTime_Log_From_LiveServer")
+              ) {
+                console.log("Live reload enabled.");
+                sessionStorage.setItem(
+                  "IsThisFirstTime_Log_From_LiveServer",
+                  true
+                );
+              }
+            })();
+          } else {
+            console.error(
+              "Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading."
+            );
+          }
+          // ]]>
+        </script>
+      </div>
+    </div>
+    <!-- Code injected by live-server -->
+    <script>
+      // <![CDATA[  <-- For SVG support
+      if ("WebSocket" in window) {
+        (function () {
+          function refreshCSS() {
+            var sheets = [].slice.call(document.getElementsByTagName("link"));
+            var head = document.getElementsByTagName("head")[0];
+            for (var i = 0; i < sheets.length; ++i) {
+              var elem = sheets[i];
+              var parent = elem.parentElement || head;
+              parent.removeChild(elem);
+              var rel = elem.rel;
+              if (
+                (elem.href && typeof rel != "string") ||
+                rel.length == 0 ||
+                rel.toLowerCase() == "stylesheet"
+              ) {
+                var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, "");
+                elem.href =
+                  url +
+                  (url.indexOf("?") >= 0 ? "&" : "?") +
+                  "_cacheOverride=" +
+                  new Date().valueOf();
+              }
+              parent.appendChild(elem);
+            }
+          }
+          var protocol =
+            window.location.protocol === "http:" ? "ws://" : "wss://";
+          var address =
+            protocol + window.location.host + window.location.pathname + "/ws";
+          var socket = new WebSocket(address);
+          socket.onmessage = function (msg) {
+            if (msg.data == "reload") window.location.reload();
+            else if (msg.data == "refreshcss") refreshCSS();
+          };
+          if (
+            sessionStorage &&
+            !sessionStorage.getItem("IsThisFirstTime_Log_From_LiveServer")
+          ) {
+            console.log("Live reload enabled.");
+            sessionStorage.setItem("IsThisFirstTime_Log_From_LiveServer", true);
+          }
+        })();
+      } else {
+        console.error(
+          "Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading."
+        );
+      }
+      // ]]>
+    </script>
+  </body>
 </html>
