@@ -1,3 +1,14 @@
+.spcing {
+  padding: 1%;
+}
+
+.vertical {
+  display: flex;
+  /* align-items: center;
+  justify-content: center;
+  min-height: 100vh; */
+}
+
 /* .login-box {
   display: flex;
   align-items: center;
@@ -5,10 +16,6 @@
   flex-wrap: wrap;
   min-height: 100vh;
 } */
-
-.spcing {
-  padding: 1.0%;
-}
 
 /* .login-form {
   border: 2px solid;
