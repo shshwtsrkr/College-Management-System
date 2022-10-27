@@ -22,12 +22,11 @@
   $gender = mysqli_real_escape_string($conn,$gender);
   $feePaid = mysqli_real_escape_string($conn,$feePaid);
 
-  echo "Gender: '$gender', Fee Paid: '$feePaid', Reg No: '$regno'";
+  // echo "Gender: '$gender', Fee Paid: '$feePaid', Reg No: '$regno'";
 
 
   $sql = "UPDATE student SET phone_no='$phoneNo', gender='$gender', branch='$branch', present_year='$currentYear', fee_paid='$feePaid', is_registered='1' WHERE reg_no='$regno';";
 
-  // "UPDATE student SET phone_no='6003687977', gender='M', branch='CSE', present_year='2', fee_paid='1', is_registered='1' WHERE reg_no='202000530';";
   $result = mysqli_query($conn, $sql);
 
 
@@ -35,8 +34,8 @@
     echo "Couldn't insert into the table because wrong or invalid data inputted!";
     include "../pages/dummyError.html";    
   }else{
-    echo "This is landing from register html";
-    include "../pages/landing.html";
+    // echo "This is landing from register html";
+    include "../pages/dashboard.html";
   }
 
 ?>
